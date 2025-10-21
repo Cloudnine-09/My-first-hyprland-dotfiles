@@ -1,0 +1,7 @@
+{
+  "uploadCommand": "wl-copy <",
+  "savePath": "~/Pictures/Screenshots/",
+  "useDateInFilename": true,
+  "shortcut": "Print"
+}
+

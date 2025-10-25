@@ -1,0 +1,53 @@
+window#osd {
+  border-radius: 8px;
+  border: none;
+  background: transparent;
+  padding: 5px 12px; /* Slimmer space on all sides */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: fit-content; /* Prevent excess side stretching */
+  min-width: unset;
+}
+
+window#osd #container {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Consistent space between icon/text and progress bar */
+}
+
+window#osd label {
+  color: #ffffffcc;
+  font-size: 1.1em;         /* Slightly larger for visibility */
+  margin-right: 6px;        /* Close to progress bar */
+  margin-left: 6px;
+}
+
+window#osd image {
+  color: #ffffffcc;
+  margin-right: 6px;        /* Keeps icon close to progress bar */
+}
+
+window#osd progressbar {
+  height: 6px;
+  border-radius: 999px;
+  background: transparent;
+  margin: 0 6px;            /* Equidistant from both sides */
+  flex-grow: 1;             /* Fills space between text/icon */
+  min-width: 90px;          /* Minimum width for visibility */
+}
+
+window#osd trough {
+  background: rgba(100, 100, 100, 0.20);
+  border-radius: inherit;
+  height: 6px;
+}
+
+window#osd progress {
+  background: #179299;      /* Your teal color for the actual progress */
+  border-radius: inherit;
+  height: 6px;
+}

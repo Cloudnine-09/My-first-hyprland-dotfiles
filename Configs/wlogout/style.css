@@ -8,13 +8,18 @@ window {
 }
 
 button {
-    border-radius: 0;
+    box-shadow: 0px 0px 4px black
+	border-radius: 28px;
     border-color: black;
+	padding: 6px;
+	margin: 8px;
+	
 	text-decoration-color: #FFFFFF;
     color: #FFFFFF;
-	background-color: #1E1E1E;
+	
+	background-color: @background;
 	border-style: solid;
-	border-width: 1px;
+	border-width: 0px;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 25%;

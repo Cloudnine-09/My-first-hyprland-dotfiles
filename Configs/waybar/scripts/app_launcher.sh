@@ -1,4 +1,4 @@
 #!/bin/bash
 
-rofi -show drun -show-icons
+exec ~/.config/rofi/launchers/type-3/launcher.sh
 

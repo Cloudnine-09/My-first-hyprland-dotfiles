@@ -55,15 +55,11 @@ window#waybar {
 #battery,
 #pulseaudio,
 #backlight,
-#custom-pacman,
 #network,
 #clock,
 #bluetooth,
 #custom-media,
 #window,
-#cpu,
-#memory,
-#disk,
 #tray,
 #custom-launcher,
 #custom-notification,
@@ -74,17 +70,85 @@ window#waybar {
   margin: 0 0 0 12px;
 }
 
-
 #window.hidden {
-    opacity: 0;
-    min-width: 0;
-    min-height: 0;
-    padding: 0;
-    margin: 0;
-    border: none;
+  opacity: 0;
+  min-width: 0;
+  min-height: 0;
+  padding: 0;
+  margin: 0;
+  border: none;
 }
 
 window#waybar.empty #window {
-    background-color: transparent;
+  background-color: transparent;
 }
 
+#custom-launcher {
+  color: #2bc3af;
+}
+
+#clock {
+  color: #cba6f7;
+}
+
+#pulseaudio {
+  color: #2bc3af;
+}
+
+#battery {
+  color: #53df7a;
+}
+
+#battery.charging {
+  color: #a6e3a1;
+}
+
+#battery.warning:not(.charging) {
+  color: #fab387;
+}
+
+#battery.critical:not(.charging) {
+  color: #f38ba8;
+  animation: blink 0.5s linear infinite;
+}
+
+@keyframes blink {
+  to {
+    background-color: rgba(243, 139, 168, 0.5);
+  }
+}
+
+#network {
+  color: #b163e8;
+}
+
+#custom-power {
+  color: #f38ba8;
+  font-size: 15px;
+  padding: 0px 10px;
+}
+
+#bluetooth.connected {
+  color: #74c7ec;
+}
+
+#bluetooth.disabled {
+  color: #ee547a;
+}
+
+#custom-notification {
+  color: #a11ae4;
+}
+
+#tray {
+  color: #a6e3a1;
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  color: #a6e3a1;
+}

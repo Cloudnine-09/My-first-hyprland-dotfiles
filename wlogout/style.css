@@ -1,0 +1,74 @@
+
+
+window {
+	font-family: "Adwaita Sans", "JetBrainsMono Nerd Font Propo";
+	font-size: 1.2em;
+	color: #abb2bf; /* fg (text) */
+	background-color: transparent; 
+}
+
+button {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 20%;
+	background-color: transparent; /* box background */
+	animation: gradient 20s ease-in-out infinite;
+	transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 10px 4px transparent
+	border-radius: 40px;
+	margin: 8px;
+    color: #abb2bf;	
+}
+
+button:focus {
+	box-shadow: none;
+	outline-style: none;
+	background-size: 20%;
+	border-radius: 40px;
+	margin: 8px;
+}
+
+button:hover {
+	background-size: 40%;
+	box-shadow: 0 0 10px 3px rgba(0,0,0,0.4);
+	background-color: #0aaac9;
+	border-radius: 40px;
+	color: transparent;
+	margin: 8px;
+}
+
+#shutdown {
+    background-image: image(url("./icons/power.png"));
+}
+#shutdown:hover {
+  background-image: image(url("./icons/power-hover.png"));
+}
+
+#logout {
+    background-image: image(url("./icons/logout.png"));
+
+}
+#logout:hover {
+  background-image: image(url("./icons/logout-hover.png"));
+}
+
+#reboot {
+    background-image: image(url("./icons/restart.png"));
+}
+#reboot:hover {
+  background-image: image(url("./icons/restart-hover.png"));
+}
+
+#lock {
+    background-image: image(url("./icons/lock.png"));
+}
+#lock:hover {
+  background-image: image(url("./icons/lock-hover.png"));
+}
+
+#suspend {
+    background-image: image(url("./icons/suspend.png"));
+}
+#suspend:hover {
+  background-image: image(url("./icons/suspend-hover.png"));
+}

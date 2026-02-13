@@ -18,7 +18,7 @@
 
   "custom/launcher": {
     "format": "",
-    "on-click": "bash /home/$USER/.config/waybar/scripts/app_launcher.sh",
+    "on-click": "pkill rofi || rofi -show drun -theme ~/.config/rofi/launchers/style-1.rasi",
     "tooltip-format": "Launch your favorite apps"
   },
 

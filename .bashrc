@@ -14,11 +14,21 @@ export LC_ALL=en_US.UTF-8
 export COLORTERM=truecolor
 
 eval "$(starship init bash)"
+eval "$(zoxide init bash)"
 
 export EZA_ICONS_AUTO=always
 
-alias es="eza --icons=always"
-alias el="eza -l --icons=always"
-alias ela="eza -la --icons=always"
-alias elah="eza -lah --icons=always"
+alias ls="eza --icons=always"
+alias ba="upower -i /org/freedesktop/UPower/devices/battery_BAT1"
 
+alias In="sudo reflector --verbose --country 'India' -l 10 --sort rate --save /etc/pacman.d/mirrorlist"
+
+alias cd="z"
+
+export PATH="$HOME/.local/bin:$PATH"
+
+alias ff="fastfetch"
+
+alias fs="sudo fstrim -av"
+
+alias flr="flatpak uninstall --unused --delete-data"

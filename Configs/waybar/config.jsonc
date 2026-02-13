@@ -186,7 +186,7 @@
     "tooltip": true,
     "tooltip-format": "Power Menu",
     "exec": "echo ; echo 󰟡 power // blur",
-    "on-click": "~/.config/wlogout/wlogout.sh",
+    "on-click": "~/.config/rofi/powermenu/powermenu.sh",
     "format": "⏻"
   }
 }

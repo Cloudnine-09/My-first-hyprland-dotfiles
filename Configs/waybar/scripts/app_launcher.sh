@@ -1,4 +1,4 @@
 #!/bin/bash
 
-exec ~/.config/rofi/launchers/type-3/launcher.sh
+exec pkill rofi || rofi -show drun -theme ~/.config/rofi/launchers/style-1.rasi
 

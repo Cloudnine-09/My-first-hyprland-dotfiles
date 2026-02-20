@@ -1,0 +1,83 @@
+/* PERFECT 1x4 WALLPAPER STRIP */
+
+* {
+    font:           "Roboto 10";
+    background-color: transparent;
+    text-color:     @fg0;
+    margin:         0px;
+    padding:        0px;
+    spacing:        4px;
+}
+
+window {
+    location:       center;
+    width:          52%;        /* Wider, comfortable width */
+    height:         42%;
+    border-radius:  20px;
+    background-color: @bg0;
+    border:         2px 0 0 0;
+    border-color:   @bg3;
+}
+
+mainbox {
+    padding:    8px;
+    orientation: vertical;
+}
+
+inputbar {
+    background-color: @bg1;
+    border:           2px 0 0 0;
+    border-color:     @bg3;
+    border-radius:    14px;
+    padding:          6px 12px;
+    spacing:          6px;
+    margin:           0 0 6px 0;
+}
+
+prompt {
+    text-color: @fg2;
+}
+
+entry {
+    placeholder:        "Wallpaper";
+    placeholder-color:  @fg3;
+    text-color:         @fg1;
+}
+
+listview {
+    lines:      1;
+    columns:    4;
+    spacing:    12px;
+    padding:    2px;
+    margin:     0 6px 6px 6px;
+    background-color: transparent;
+}
+
+element {
+    padding:        6px;
+    spacing:        4px;
+    border-radius:  14px;
+    orientation:    vertical;   /* Thumbnail above name */
+}
+
+element normal.active {
+    background-color: transparent;
+    text-color:       @fg1;
+}
+
+element selected.normal, element selected.active {
+    background-color: @bg3;
+    text-color:       @bg0;
+}
+
+element-icon {
+    size:           160px;  /* Huge thumbnails */
+    border-radius:  12px;
+}
+
+element-text {
+    text-color: inherit;
+    font-size:  9px;
+    text-align: center;
+    max-height: 1.2em;
+}
